@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Orienta&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Orienta', sans-serif;
+    height:100%;
+}
+
+/* rows */
+nav,nav ul,.nav-ul-col{
+    display: flex;
+}
+.nav-ul-col{
+    padding:0px;
+    margin:0px;
+    width:85%;
+
+}
+
+/* NAVBAR */
+nav{
+    background-color: #565D8C;
+    color: white; 
+}
+nav ul{
+    
+    list-style: none;
+}
+.nav-li{
+    flex:1;
+    margin: 0% 1% 0% 1%; 
+}
+.nav-li  a{
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;    
+    width: 100%;
+    color: white;
+
+
+}
+nav >ul>li> a:hover{
+    background-color: rgba(123, 131, 187, 0.719);
+}
+.nav-logo{
+    display: inline-flex;
+    align-items: center;
+}
+.nav-logo-icon{
+    height: 80px;
+    width:auto;
+    margin:5px;
+}
+.nav-name{
+    font-size: 30px;
+    margin-left: 3px;
+}
