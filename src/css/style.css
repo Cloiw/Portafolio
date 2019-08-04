@@ -12,7 +12,7 @@ nav,nav ul,.nav-ul{
 }
 
 /* NAVBAR */
-.nav-ul{
+.nav-ul,.nav-ul-resp{
     padding:0px;
     margin:0px;
     width:100%;
@@ -22,6 +22,10 @@ nav,nav ul,.nav-ul{
 nav{
     background-color: #565D8C;
     color: white; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+  
 }
 
 nav ul{
@@ -51,3 +55,39 @@ nav >ul>li> a:hover{
     width:auto;
     margin:5px 40px 5px 5px;
 }
+
+.nav-icon {
+    font-size: 50px;
+    margin:5px 20px 5px 5px;
+    display: none;
+  }
+  @media screen and (max-width: 700px) {
+      nav{
+          display: block;
+      }
+      .nav-container{
+          display: flex;
+          width: 100%;
+      }
+    .nav-ul{
+        display: none;
+    }
+    .nav-icon {
+        display: block;
+    }
+    .nav-ul,.nav-ul-resp{
+       
+        align-items: center;
+        justify-content: flex-end;
+      }
+    .nav-ul-resp{
+        display: block;
+        flex-direction: row;
+    }
+    nav >ul>li> a{
+        padding:20px;
+    }
+    
+  }
+
+  
