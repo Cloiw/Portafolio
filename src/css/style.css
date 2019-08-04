@@ -7,29 +7,31 @@ body{
 }
 
 /* rows */
-nav,nav ul,.nav-ul-col{
+nav,nav ul,.nav-ul{
     display: flex;
-}
-.nav-ul-col{
-    padding:0px;
-    margin:0px;
-    width:85%;
-
 }
 
 /* NAVBAR */
+.nav-ul{
+    padding:0px;
+    margin:0px;
+    width:100%;
+    flex-wrap: wrap;
+}
+
 nav{
     background-color: #565D8C;
     color: white; 
 }
+
 nav ul{
-    
     list-style: none;
 }
+
 .nav-li{
-    flex:1;
-    margin: 0% 1% 0% 1%; 
+    flex:1; 
 }
+
 .nav-li  a{
     text-decoration: none;
     display: inline-flex;
@@ -38,22 +40,14 @@ nav ul{
     height:100%;    
     width: 100%;
     color: white;
-
-
 }
+
 nav >ul>li> a:hover{
     background-color: rgba(123, 131, 187, 0.719);
 }
-.nav-logo{
-    display: inline-flex;
-    align-items: center;
-}
+
 .nav-logo-icon{
     height: 80px;
     width:auto;
-    margin:5px;
-}
-.nav-name{
-    font-size: 30px;
-    margin-left: 3px;
+    margin:5px 40px 5px 5px;
 }
