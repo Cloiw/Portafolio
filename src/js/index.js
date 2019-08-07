@@ -22,16 +22,24 @@ const hideNavBarLi = () =>{
   for (i = 0; i < navBar.getElementsByTagName("LI").length; i++) {
     navBar.getElementsByTagName("LI")[i].addEventListener('click', () =>{
         navBar.className = navBar.className + " hidden";
-      
+        changeIconMenu("☰");
         setTimeout( () => {
+          
           navBar.className = "nav-ul";
         }, 500);
     })
   }
 }
 
+const changeIconMenu = (text) =>{
+  navIcon.removeChild(navIcon.childNodes[0])
+  navIcon.appendChild(document.createTextNode(text));
+  
+}
+
 
 navIcon.addEventListener('click', () =>{
+  changeIconMenu("X");
 
   if (navBar.className === "nav-ul") {
 
@@ -62,7 +70,7 @@ navIcon.addEventListener('click', () =>{
     }, 300);
       
     } else {
-
+      changeIconMenu("☰");
       navBar.className = navBar.className + " hidden";
       setTimeout(() => {
         navBar.className = "nav-ul";

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Orienta&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo&display=swap');
 
 body{
     margin: 0;
@@ -98,6 +99,8 @@ nav{
     }
 
     #nav-menu-icon{
+        font-family: 'Baloo', cursive;
+        font-weight: bold;
         padding-left: 40px;
     }
 
