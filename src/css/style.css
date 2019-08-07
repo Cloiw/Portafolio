@@ -17,15 +17,16 @@ nav,nav ul,.nav-ul{
     margin:0px;
     width:100%;
     flex-wrap: wrap;
-}
-
-nav{
     background-color: #565D8C;
-    color: white; 
+}
+nav{
     position: fixed;
-    top: 0;
     width: 100%;
-  
+    top: 0;
+    color:white
+}
+.nav-container{
+    background-color: #565D8C;
 }
 
 nav ul{
@@ -82,15 +83,27 @@ nav >ul>li> a:hover{
     .nav-ul,.nav-ul-resp{
         align-items: center;
         justify-content: flex-end;
+        background-color: transparent;
     }
-    .nav-ul-resp{
-        display: block;
-        flex-direction: row;
+    .nav-ul-resp{ 
+        flex-direction: column;
     }
     nav >ul>li> a{
        padding: 20px 0px 20px 0px;
     }
         
+    .nav-li {
+        background-color: red;
+        perspective: 100px;
+        height: 2em;
+        width: 100%;
+        transition: all 0.4s ease-out;
+        opacity: 0;
+        
+      }
+      .nav-li.show {
+        opacity: 1;
+      }
     }
 
   
