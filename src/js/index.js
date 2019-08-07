@@ -41,30 +41,30 @@ navIcon.addEventListener('click', () =>{
 
     navBar.className += "-resp"; 
 
-    setTimeout(function() {
+    setTimeout(() => {
       createNavBarLi("PROYECTOS","#",navBar);
     }, 0);
 
-    setTimeout(function() {
+    setTimeout(() => {
       createNavBarLi("HERRAMIENTAS","#/",navBar);
     }, 100);
 
-    setTimeout(function() {
+    setTimeout(() => {
       createNavBarLi("ACERCA DE MI","#/",navBar);
     }, 200);
 
-    setTimeout(function() {
+    setTimeout(() => {
       createNavBarLi("CONTACTO","#/",navBar);
     }, 300);
     
-    setTimeout(function() {
+    setTimeout(() => {
       hideNavBarLi();
     }, 300);
       
     } else {
 
       navBar.className = navBar.className + " hidden";
-      setTimeout(function () {
+      setTimeout(() => {
         navBar.className = "nav-ul";
       }, 500);
     }
