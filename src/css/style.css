@@ -7,7 +7,7 @@ body{
 }
 
 /* rows */
-nav,nav ul,.nav-ul{
+nav,nav ul,.nav-ul,.nav-logo a{
     display: flex;
 }
 
@@ -26,6 +26,7 @@ nav{
     top: 0;
     color:white
 }
+
 .nav-container{
     background-color: #565D8C;
 }
@@ -48,57 +49,66 @@ nav{
     color: white;
 }
 
-nav >ul>li> a:hover{
+.nav-li a:hover{
     background-color: rgba(123, 131, 187);
 }
 
-.nav-logo-icon{
-    height: 80px;
-    width:auto;
-    margin:5px 40px 5px 5px;
-}
-
-.nav-icon {
-  
-    width: 100%;
-    font-size: 50px;
-    display: none;
-  }
-
-  .nav-ul-resp.hidden{
+.nav-ul-resp.hidden{
     transition:0;
     opacity: 1;
 }
 
+/* logo imagen */
+.nav-logo-icon{
+    height: 80px;
+    width:auto;
+    margin:8px 40px 8px 5px;
+}
 
+/* icono menu responsive */
+.nav-icon {
+    width: 100%;
+    font-size: 50px;
+    display: none;
+}
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    
     nav{
         display: block;
     }
+
     .nav-container{
         display: flex;
-        width: 100%;
     }
+
     .nav-ul{
         display: none;
     }
+
     .nav-icon {
-        display: block;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 30px;
     }
+
+    .nav-logo-icon{
+        margin:8px 0px 8px 5px;
+    }
+
+    #nav-menu-icon{
+        padding-left: 40px;
+    }
+
     .nav-ul,.nav-ul-resp{
-       
-        
         background-color: transparent;
     }
+
     .nav-ul-resp{ 
         flex-direction: column;
     }
-    nav >ul>li> a{
-       padding: 20px 0px 20px 0px;
-       
-    }
-        
+
     .nav-li {
         background-color: #565D8C;
         height: 2em;
@@ -106,16 +116,36 @@ nav >ul>li> a:hover{
         opacity: 0;
         border: 5px solid ;
         border-top: 3px solid;
-
         border-image: linear-gradient(0deg,  rgba(123, 130, 187, 0.3),rgba(65, 71, 107, 0.4)) 1;
-}
+    }
+
+    .nav-li a{
+        padding: 20px 0px 20px 0px;
+        font-size: 25px;
+    }
 
     .nav-li.show {
         opacity: 1;
     }
+
     .nav-ul-resp.hidden{
         transition: all 0.5s ease-in;
         opacity: 0;;
     }
-  }
+}
   
+@media screen and (max-width: 319px) {
+    
+    #nav-menu-icon{
+        padding-left: 0px;
+    }
+
+    .nav-logo-icon{
+        height: 50px;
+        margin-right: 0px;
+    }
+
+    .nav-icon{
+        margin-right: 10px;
+    }
+}
