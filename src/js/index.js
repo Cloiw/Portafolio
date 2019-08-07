@@ -1,8 +1,9 @@
 //
-const navIcon = document.getElementById("nav-menu-icon")
+const navIcon = document.getElementById("nav-menu-icon");
+const navBar = document.getElementById("nav-ul-id");
+
 navIcon.addEventListener('click', () =>{
-    console.log("hola")
-    let navBar = document.getElementById("nav-ul-id");
+    
     if (navBar.className === "nav-ul") {
       navBar.className += "-resp";
     } else {
@@ -10,3 +11,14 @@ navIcon.addEventListener('click', () =>{
     }
   }
 )
+
+
+for (i = 0; i < navBar.getElementsByTagName("LI").length; i++) {
+    navBar.getElementsByTagName("LI")[i].addEventListener('click', () =>{
+     
+      setTimeout(function () {
+        navBar.className = "nav-ul";
+      }, 200);
+      
+    })
+}
