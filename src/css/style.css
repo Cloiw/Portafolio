@@ -19,6 +19,7 @@ nav,nav ul,.nav-ul{
     flex-wrap: wrap;
     background-color: #565D8C;
 }
+
 nav{
     position: fixed;
     width: 100%;
@@ -29,7 +30,7 @@ nav{
     background-color: #565D8C;
 }
 
-nav ul{
+#nav-ul-id{
     list-style: none;
 }
 
@@ -61,9 +62,14 @@ nav >ul>li> a:hover{
     background-color: aqua;
     width: 100%;
     font-size: 50px;
-    
     display: none;
   }
+
+  .nav-ul-resp.hidden{
+    transition:0;
+    opacity: 1;
+}
+
 
 
   @media screen and (max-width: 700px) {
@@ -93,17 +99,19 @@ nav >ul>li> a:hover{
     }
         
     .nav-li {
-        background-color: red;
-        perspective: 100px;
+        background-color: #565D8C;
         height: 2em;
         width: 100%;
         transition: all 0.4s ease-out;
         opacity: 0;
-        
-      }
-      .nav-li.show {
-        opacity: 1;
-      }
     }
 
+    .nav-li.show {
+        opacity: 1;
+    }
+    .nav-ul-resp.hidden{
+        transition: all 0.5s ease-in;
+        opacity: 0;;
+    }
+  }
   
