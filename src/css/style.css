@@ -98,9 +98,14 @@ nav{
 
 .project-one-top,.project-two-bot,.project-three-top,.project-four-bot{
     width: 100%;
+    background: 
+     linear-gradient(#ccc,#ccc) padding-box, /*this is your grey background*/
+     linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)) border-box;
+     
+  
     border-radius: 6px;
-    border: solid 2.5px white;
-    border-image: linear-gradient(0deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.075)) 1;
+    border: solid 4px transparent;
+    
 
 }
 
@@ -110,12 +115,12 @@ nav{
 }
 .project-two-bot{
     height: 230px;
-    background-color: orange;
+   
 }
 .project-three-top{
     margin-bottom: 30px;
     height: 450px;
-    background-color: blue;
+    
 }
 .project-four-bot{
     height: 150px;
