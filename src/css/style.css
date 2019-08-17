@@ -84,8 +84,22 @@ nav{
     margin: 20px 40px 20px 40px;
 }
 
+.project-image-left,.project-image-right{
+    height: 100%;
+    width: 100%;
+    background-color: #A79BE3;  
+}
+
+.project-side-left,.project-side-right{
+    background-color: aqua;
+    height: 100%;
+    width: 60px;
+}
+
+
 .project-one-top,.project-two-bot,.project-three-top,.project-four-bot{
     background: red;
+    display: flex;
 }
 .project-col-h,.project-col-v{
     flex-direction: column;
@@ -99,10 +113,8 @@ nav{
 .project-one-top,.project-two-bot,.project-three-top,.project-four-bot{
     width: 100%;
     background: 
-     linear-gradient(#ccc,#ccc) padding-box, /*this is your grey background*/
+     linear-gradient(black, black) padding-box, /*this is your grey background*/
      linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)) border-box;
-     
-  
     border-radius: 6px;
     border: solid 4px transparent;
     
@@ -111,14 +123,14 @@ nav{
 
 .project-one-top{
     height: 370px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .project-two-bot{
     height: 230px;
    
 }
 .project-three-top{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     height: 450px;
     
 }
