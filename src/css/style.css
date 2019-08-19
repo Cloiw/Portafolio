@@ -12,6 +12,7 @@ body{
 nav,nav ul,.nav-ul,.nav-logo a,.project-row,.project-col-h,.project-col-v{
     display: flex;
 }
+
 /* NAVBAR */
 .nav-ul,.nav-ul-resp{
     padding:0px;
@@ -243,4 +244,3 @@ nav{
         margin-right: 10px;
     }
 }
-
