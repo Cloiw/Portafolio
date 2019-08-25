@@ -159,7 +159,7 @@ nav{
     margin-bottom: 5px;
 }
 
-.project-content-icon > a, .project-content-icon > button{
+.project-content-icon > a, .project-content-icon > button, .project-close-icon-row{
     background: none;
     border: 0;
     padding:0;
@@ -180,17 +180,44 @@ nav{
     height: 45px;
     filter: drop-shadow(0px 0px 10px  rgb(255, 255, 255));
 }
-.close-info{
-    width:30px;
+.project-close-icon-row > button:hover{
+    width: 40px;
+    filter: drop-shadow(0px 0px 10px  rgb(255, 255, 255));
 }
+
+.project-close-icon-row{
+    background-color: rgba(85, 92, 139, 0.463);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    align-self: flex-end;
+}
+
+.project-close-icon-row > button {
+    width: 35px;
+    padding: 0;
+    background: none;
+    border: 0;
+}
+.close-info{
+    width:100%;
+    display: flex;
+}
+
 .project-info{
+    display: flex;
     flex-direction: column;
     height: 98%;
     margin:2%;
     word-wrap: break-word;
     color:rgb(31, 35, 65);
 }
-
+.project-info > p{
+    margin: 10px 0 0 0;
+}
+.tech-tools-icon{
+    width: 30px;
+}
 .not-display{
     display: none;
 }
@@ -199,9 +226,7 @@ nav{
     display: block;
 }
 
-.tech-tools-icon{
-    width: 30px;
-}
+
 
 
 @media screen and (max-width: 768px) {
@@ -276,8 +301,18 @@ nav{
     }
 }
   
-@media screen and (max-width: 319px) {
-    
+@media screen and (max-width: 360px) {
+    .project-close-icon-row{
+        width: 30px;
+        height: 30px;
+    }
+
+    .project-close-icon-row > button{
+        width: 20px;
+    }
+    .project-info > p{
+        font-size: 16px;
+    }
     .nav-logo-icon{
         height: 50px;
         margin-right: 0px;
