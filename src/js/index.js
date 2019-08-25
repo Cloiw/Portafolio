@@ -18,13 +18,12 @@ const createNavBarLi = (text,href,navBar) => {
   }, 100);
 }
 
-const hideNavBarLi = () => {
+const hideNavBarLi = (icon) => {
   for (i = 0; i < navBar.getElementsByTagName("LI").length; i++) {
     navBar.getElementsByTagName("LI")[i].addEventListener('click', () => {
         navBar.className = navBar.className + " hidden";
-        changeIconMenu("☰");
+        changeIconMenu(icon);
         setTimeout( () => {
-          
           navBar.className = "nav-ul";
         }, 500);
     })
@@ -64,7 +63,7 @@ navIcon.addEventListener('click', () => {
     }, 300);
     
     setTimeout(() => {
-      hideNavBarLi();
+      hideNavBarLi('./src/img/menu_navbar_icon.png');
     }, 300);
       
     } else {
