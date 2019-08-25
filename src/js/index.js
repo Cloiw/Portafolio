@@ -3,7 +3,7 @@ const navIcon = document.getElementById("nav-menu-icon");
 const navBar = document.getElementById("nav-ul-id");
 
 
-const createNavBarLi = (text,href,navBar) =>{
+const createNavBarLi = (text,href,navBar) => {
   const li = document.createElement("li");
   const a = document.createElement("a");
 
@@ -18,9 +18,9 @@ const createNavBarLi = (text,href,navBar) =>{
   }, 100);
 }
 
-const hideNavBarLi = () =>{
+const hideNavBarLi = () => {
   for (i = 0; i < navBar.getElementsByTagName("LI").length; i++) {
-    navBar.getElementsByTagName("LI")[i].addEventListener('click', () =>{
+    navBar.getElementsByTagName("LI")[i].addEventListener('click', () => {
         navBar.className = navBar.className + " hidden";
         changeIconMenu("☰");
         setTimeout( () => {
@@ -31,12 +31,12 @@ const hideNavBarLi = () =>{
   }
 }
 
-const changeIconMenu = (newSrc) =>{
+const changeIconMenu = (newSrc) => {
   navIcon.src = newSrc;
 }
 
 
-navIcon.addEventListener('click', () =>{
+navIcon.addEventListener('click', () => {
   changeIconMenu("./src/img/close_navbar_icon.png");
 
   if (navBar.className === "nav-ul") {

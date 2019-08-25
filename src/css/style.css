@@ -71,8 +71,10 @@ nav{
 /* icono menu responsive */
 .nav-icon {
     width: 100%;
-    font-size: 50px;
     display: none;
+}
+.nav-menu-icon-src{
+    height: 50px;
 }
 
 
@@ -202,12 +204,6 @@ nav{
         margin:8px 0px 8px 5px;
     }
 
-    #nav-menu-icon{
-        font-family: 'Baloo', cursive;
-        font-weight: bold;
-        padding-left: 40px;
-    }
-
     .nav-ul,.nav-ul-resp{
         background-color: transparent;
     }
@@ -242,13 +238,14 @@ nav{
 }
 
 @media screen and (max-width: 600px) {
-.project-col-h,.project-col-v{
-    margin:0px;
-    width: 100%;
-}
-.project-two-bot{
-    margin-bottom: 20px;
-}
+
+    .project-col-h,.project-col-v{
+        margin:0px;
+        width: 100%;
+    }
+    .project-two-bot{
+        margin-bottom: 20px;
+    }
     .project-row{
         flex-direction:column;
     }
@@ -256,10 +253,6 @@ nav{
   
 @media screen and (max-width: 319px) {
     
-    #nav-menu-icon{
-        padding-left: 0px;
-    }
-
     .nav-logo-icon{
         height: 50px;
         margin-right: 0px;
@@ -267,6 +260,10 @@ nav{
 
     .nav-icon{
         margin-right: 10px;
+    }
+
+    .nav-menu-icon-src{
+        height: 30px;
     }
 }
 
