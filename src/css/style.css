@@ -27,6 +27,7 @@ nav{
     width: 100%;
     top: 0;
     color:white;
+    z-index: 50;
 }
 
 .nav-container{
@@ -90,7 +91,7 @@ nav{
     background-color: #A79BE3;  
 }
 
-.project-side,.project-side{
+.project-side{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -128,6 +129,14 @@ nav{
     height: 370px;
     margin-bottom: 20px;
 }
+.project-image-src{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.project-image-src:hover{
+    filter: brightness(1.3) saturate(120%);
+}
 .project-two-bot{
     height: 230px;
    
@@ -142,13 +151,32 @@ nav{
 }
 
 .project-content-icon{
+   flex-direction: column;
+    height: 120px;
     margin-bottom: 5px;
 }
-.project-icon{
-    width: 40px;
-    margin:7px;
+
+.project-content-icon > a, .project-content-icon > button{
+    background: none;
+    border: 0;
+    padding:0;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    display: flex;
 }
 
+.project-icon{
+    height: 40px;
+    width: 40px;
+}
+
+.project-icon:hover{
+    width: 45px;
+    height: 45px;
+    filter: drop-shadow(0px 0px 10px  rgb(255, 255, 255));
+}
 @media screen and (max-width: 768px) {
     
     nav{
