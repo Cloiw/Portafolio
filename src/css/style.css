@@ -15,6 +15,7 @@ nav,nav ul,.nav-ul,.nav-logo a,.project-row,.project-col-h,.project-col-v{
 
 /* NAVBAR */
 .nav-ul,.nav-ul-resp{
+    list-style: none;
     padding:0px;
     margin:0px;
     width:100%;
@@ -179,6 +180,30 @@ nav{
     height: 45px;
     filter: drop-shadow(0px 0px 10px  rgb(255, 255, 255));
 }
+.close-info{
+    width:30px;
+}
+.project-info{
+    flex-direction: column;
+    height: 98%;
+    margin:2%;
+    word-wrap: break-word;
+    color:rgb(31, 35, 65);
+}
+
+.not-display{
+    display: none;
+}
+
+.display{
+    display: block;
+}
+
+.tech-tools-icon{
+    width: 30px;
+}
+
+
 @media screen and (max-width: 768px) {
     
     nav{
