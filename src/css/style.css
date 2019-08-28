@@ -81,11 +81,12 @@ nav{
 
 /* seccion proyectos */
 .content{
-    margin-top:130px;
+    margin-top:96px;
 }
 
 .project-row{
-    margin: 20px 40px 20px 40px;
+    margin: 0 2% 3% 2%;
+    padding-top: 2%;
 }
 
 .project-image,.project-image{
@@ -105,20 +106,20 @@ nav{
 
 
 .project-one-top,.project-two-bot,.project-three-top,.project-four-bot{
-    background: red;
+    margin:1%;
     display: flex;
 }
 .project-col-h,.project-col-v{
     flex-direction: column;
     width: 55%;
-    margin:15px;
+
 }
 .project-col-v{
+
     width: 45%;
 }
 
 .project-one-top,.project-two-bot,.project-three-top,.project-four-bot{
-    width: 100%;
     background: 
      linear-gradient(black, black) padding-box, /*this is your grey background*/
      linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)) border-box;
@@ -129,8 +130,7 @@ nav{
 }
 
 .project-one-top{
-    height: 370px;
-    margin-bottom: 20px;
+    height: 400px;
 }
 .project-image-src{
     height: 100%;
@@ -145,12 +145,11 @@ nav{
    
 }
 .project-three-top{
-    margin-bottom: 20px;
     height: 450px;
     
 }
 .project-four-bot{
-    height: 150px;
+    height: 183px;
 }
 
 .project-content-icon{
@@ -161,7 +160,7 @@ nav{
 
 .project-content-icon > a, .project-content-icon > button, .project-close-icon-row{
     background: none;
-    border: 0;
+    border:0;
     padding:0;
     align-items:center;
     justify-content: center;
@@ -186,11 +185,13 @@ nav{
 }
 
 .project-close-icon-row{
-    background-color: rgba(85, 92, 139, 0.463);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    align-self: flex-end;
+    border-bottom: 2px solid white;
+    display: flex;
+    width: 88%;
+    margin: 0% 6% 0% 6%;
+    height: 20%;
+    align-content: flex-end;
+    justify-content: space-between;
 }
 
 .project-close-icon-row > button {
@@ -205,18 +206,52 @@ nav{
 }
 
 .project-info{
+    position: relative;
     display: flex;
     flex-direction: column;
-    height: 98%;
-    margin:2%;
+    height: 100%;
+    width: 100%;
     word-wrap: break-word;
-    color:rgb(31, 35, 65);
+    color:white;
+    background-color: #8d98f62f;
 }
-.project-info > p{
-    margin: 10px 0 0 0;
+
+.absolute {
+    background-color: rgba(0, 0, 0, 0.376);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.project-text-and-tech{
+    height: 78%;
+    width: 88%;
+    margin: 2% 6% 0% 6%;
+    font-size: 17px;
+}
+
+.project-info > img {
+    filter: opacity(50%)blur(1px);
+    width: 100%;
+    height: 100%;
+}
+.project-text-and-tech > p{
+    margin: 0px;
+}
+
+.tech-tools {
+    display: flex;
+    justify-content: flex-start;
+    height: 18%;
 }
 .tech-tools-icon{
-    width: 30px;
+    height: 50px;
+    margin: 5px;
+    filter: drop-shadow(0px 0px 10px  rgba(0, 0, 0, 0.4));
+}
+
+.project-text-and-tech > h3 {
+    margin-bottom: 0;
 }
 .not-display{
     display: none;
@@ -285,26 +320,58 @@ nav{
         transition: all 0.5s ease-in;
         opacity: 0;;
     }
-}
-
-@media screen and (max-width: 600px) {
 
     .project-col-h,.project-col-v{
         margin:0px;
         width: 100%;
     }
+
     .project-two-bot{
         margin-bottom: 20px;
     }
+
     .project-row{
         flex-direction:column;
     }
+
+    .project-text-and-tech {
+        font-size:16.5px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .project-close-icon-row {
+        height: 13%;;
+    }
+
+    .project-close-icon-row > button {
+        width:25px;
+    }
 }
   
-@media screen and (max-width: 360px) {
-    .project-close-icon-row{
-        width: 30px;
-        height: 30px;
+@media screen and (max-width: 366px) {
+    h2 { 
+        margin: 0;
+        font-size: 15px;
+    }
+    .content {
+        margin-top: 66px;
+    }
+    .project-text-and-tech {
+        font-size:15px;
+    }
+
+    .project-close-icon-row {
+        height: 10%;
+    }
+
+    .project-text-and-tech{
+        height: 88%;
+    }
+
+    .project-close-icon-row > button {
+        width:20px;
     }
 
     .project-close-icon-row > button{
@@ -327,3 +394,8 @@ nav{
     }
 }
 
+@media screen and (max-width: 300px) {
+    .project-text-and-tech {
+        font-size:12px;
+    }
+}
