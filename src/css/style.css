@@ -8,6 +8,8 @@ body{
     background-image: linear-gradient(#7183DF, #A79BE3);
 }
 
+    
+
 /* rows */
 nav,nav ul,.nav-ul,.nav-logo a,.project-row,.project-col-h,.project-col-v{
     display: flex;
@@ -51,6 +53,10 @@ nav{
     height:100%;    
     width: 100%;
     color: white;
+}
+
+.nav-li.show > a{
+    height: auto
 }
 
 .nav-li a:hover{
