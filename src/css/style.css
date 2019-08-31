@@ -5,18 +5,21 @@ body{
     margin: 0;
     font-family: 'Orienta', sans-serif;
     height:100%;
-    background-image: linear-gradient(#7183DF, #A79BE3);
+    background-image: url('../img/stars_3.jpg'),url('../img/stars.png'),url('../img/stars_2.png'),url('../img/stars_2.png'),linear-gradient(rgb(9, 14, 41), rgb(73, 65, 117));
+    background-repeat: repeat, repeat, repeat, repeat, no-repeat;
+    background-size: 500px, 180px, 100px, 400px, auto;
+    background-blend-mode: lighten, normal, normal, normal, normal;
+    background-attachment: fixed, scroll, scroll, scroll, fixed;
 }
 
-    
-
 /* rows */
-nav,nav ul,.nav-ul,.nav-logo a,.project-row,.project-col-h,.project-col-v{
+nav,nav ul,.nav-ul,.nav-logo a,.project-row,.tools-row,.project-col-l,.project-col-r {
     display: flex;
 }
 
 /* NAVBAR */
-.nav-ul,.nav-ul-resp{
+.nav-ul,
+.nav-ul-resp {
     list-style: none;
     padding:0px;
     margin:0px;
@@ -25,7 +28,7 @@ nav,nav ul,.nav-ul,.nav-logo a,.project-row,.project-col-h,.project-col-v{
     background-color: #565D8C;
 }
 
-nav{
+nav {
     position: fixed;
     width: 100%;
     top: 0;
@@ -33,7 +36,7 @@ nav{
     z-index: 50;
 }
 
-.nav-container{
+.nav-container {
     background-color: #565D8C;
 }
 
@@ -41,11 +44,11 @@ nav{
     list-style: none;
 }
 
-.nav-li{
+.nav-li {
     flex:1; 
 }
 
-.nav-li  a{
+.nav-li  a {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -55,21 +58,18 @@ nav{
     color: white;
 }
 
-.nav-li.show > a{
-    height: auto
-}
 
-.nav-li a:hover{
+.nav-li a:hover {
     background-color: rgba(123, 131, 187);
 }
 
-.nav-ul-resp.hidden{
+.nav-ul-resp.hidden {
     transition:0;
     opacity: 1;
 }
 
 /* logo imagen */
-.nav-logo-icon{
+.nav-logo-icon {
     height: 80px;
     width:auto;
     margin:8px 40px 8px 5px;
@@ -80,71 +80,74 @@ nav{
     width: 100%;
     display: none;
 }
-.nav-menu-icon-src{
+.nav-menu-icon-src {
     height: 50px;
 }
 
-
 /* seccion proyectos */
-.content{
+.content {
     margin-top:96px;
 }
 
-.project-row{
+.project-row,.tools-row {
     margin: 0 2% 3% 2%;
     padding-top: 2%;
 }
 
-.project-image,.project-image{
+.project-image {
     height: 100%;
     width: 100%;
     background-color: #A79BE3;  
 }
 
-.project-side{
+.project-side {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-color: #565D8C;
     height: 100%;
     width: 60px;
 }
 
-
-.project-one-top,.project-two-bot,.project-three-top,.project-four-bot{
+.project-one-top,
+.project-two-bot,
+.project-three-top,
+.project-four-bot{
     margin:1%;
     display: flex;
 }
-.project-col-h,.project-col-v{
+.project-col-l,
+.project-col-r{
     flex-direction: column;
     width: 55%;
 
 }
-.project-col-v{
+.project-col-r{
 
     width: 45%;
 }
 
-.project-one-top,.project-two-bot,.project-three-top,.project-four-bot{
+.project-one-top,
+.project-two-bot,
+.project-three-top,
+.project-four-bot {
     background: 
-     linear-gradient(black, black) padding-box, /*this is your grey background*/
+     linear-gradient(to top,rgba(53,0,86,0.7) 0%, rgba(53,0,86,0.60) 13%, rgba(120, 106, 160, 0.9) 100%) padding-box,
      linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)) border-box;
-    border-radius: 6px;
-    border: solid 4px transparent;
+    border-radius: 4px;
+    border: solid 3px transparent;
+    -webkit-box-shadow: 0px 13px 6px -7px rgba(16,1,36,1);
+    -moz-box-shadow: 0px 13px 6px -7px rgba(16,1,36,1);
+    box-shadow: 0px 13px 6px -7px rgba(16,1,36,1);
     
 
 }
 
-.project-one-top{
+.project-one-top {
     height: 400px;
 }
-.project-image-src{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.project-image-src:hover{
-    filter: brightness(1.3) saturate(120%);
+
+.project-image-src:hover {
+    filter: brightness(1.1) saturate(85%);
 }
 .project-two-bot{
     height: 230px;
@@ -223,10 +226,36 @@ nav{
 }
 
 .absolute {
-    background-color: rgba(0, 0, 0, 0.376);
+    background-color: rgba(0, 15, 32, 0.6);
     width: 100%;
     height: 100%;
     position: absolute;
+}
+
+#idProjectOneImg, #idProjectTwoImg {
+    object-fit: contain;
+    background-image:linear-gradient(rgba(157, 144, 231, 0.8),rgb(0, 0, 0)),url('../img/lod_bg.jpg');
+    background-size: auto,cover;
+    background-blend-mode: screen;
+}
+
+#idProjectTwoImg {
+    background-image:linear-gradient(rgba(157, 144, 231, 0.8),rgb(0, 0, 0)),url('../img/sala_red_bg.jpg');
+}
+.project-image-src {
+    height: 100%;
+    width: 100%;
+}
+#idProjectInfoOneDiv{
+    background-image: url('../img/league_of_data_bg.png');
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+#idProjectInfoTwoDiv {
+    background-image: url('../img/sala_red_bg_1.jpg');
+    background-size: cover;
+    background-blend-mode: lighten;
+
 }
 
 .project-text-and-tech{
@@ -236,11 +265,6 @@ nav{
     font-size: 17px;
 }
 
-.project-info > img {
-    filter: opacity(50%)blur(1px);
-    width: 100%;
-    height: 100%;
-}
 .project-text-and-tech > p{
     margin: 0px;
 }
@@ -259,15 +283,43 @@ nav{
 .project-text-and-tech > h3 {
     margin-bottom: 0;
 }
-.not-display{
+.not-display {
     display: none;
 }
 
-.display{
+.display {
     display: block;
 }
 
+/* herramientas seccion */
+.tools-section {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
 
+.tools-row-title {
+    background-color: #565D8C;
+    border-radius: 4px;
+    width: 50%;
+}
+
+.tools-row-title h1{
+    color: white;
+    cursor: default;
+    padding-right: 10%;
+    text-align: right;
+}
+
+.tools-row {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tools-row img {
+    height: 150px;
+    margin: 5px;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -327,13 +379,9 @@ nav{
         opacity: 0;;
     }
 
-    .project-col-h,.project-col-v{
+    .project-col-l,.project-col-r{
         margin:0px;
         width: 100%;
-    }
-
-    .project-two-bot{
-        margin-bottom: 20px;
     }
 
     .project-row{
@@ -347,6 +395,10 @@ nav{
 
 
 @media screen and (max-width: 600px) {
+    .tools-row img{
+        height: 100px;
+        margin: 5px
+    }
     .project-close-icon-row {
         height: 13%;;
     }
@@ -354,9 +406,17 @@ nav{
     .project-close-icon-row > button {
         width:25px;
     }
+    .tech-tools-icon{
+        height: 35px;
+        margin: 3px;
+    }
 }
   
 @media screen and (max-width: 366px) {
+    .tools-row img{
+        height: 70px;
+        margin: 5px
+    }
     h2 { 
         margin: 0;
         font-size: 15px;

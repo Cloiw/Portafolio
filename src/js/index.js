@@ -2,9 +2,13 @@
 const navIcon = document.getElementById("IdNavMenuIcon");
 const navBar = document.getElementById("IdNavMenuUl");
 const projectOneImg = document.getElementById("idProjectOneImg");
+const projectTwoImg = document.getElementById("idProjectTwoImg");
 const projectOneCloseBtn = document.getElementById('idProjectOneCloseBtn');
-const infoProjectOneBtn = document.getElementById('idProjectInfoOneBtn')
-const infoProjectOneDiv = document.getElementById('idProjectInfoOneDiv')
+const projectTwoCloseBtn = document.getElementById('idProjectTwoCloseBtn');
+const infoProjectOneBtn = document.getElementById('idProjectInfoOneBtn');
+const infoProjectTwoBtn = document.getElementById('idProjectInfoTwoBtn');
+const infoProjectOneDiv = document.getElementById('idProjectInfoOneDiv');
+const infoProjectTwoDiv = document.getElementById('idProjectInfoTwoDiv')
 
 const createNavBarLi = (text,href,navBar) => {
   const li = document.createElement("li");
@@ -56,6 +60,12 @@ infoProjectOneBtn.addEventListener('click', () => {
 projectOneCloseBtn.addEventListener('click', () => {
   showOrHideInfoProject(projectOneImg,infoProjectOneDiv)
 })
+infoProjectTwoBtn.addEventListener('click', () => {
+  showOrHideInfoProject(projectTwoImg,infoProjectTwoDiv) 
+})
+projectTwoCloseBtn.addEventListener('click', () => {
+  showOrHideInfoProject(projectTwoImg,infoProjectTwoDiv)
+})
 
 
 navIcon.addEventListener('click', () => {
@@ -74,7 +84,7 @@ navIcon.addEventListener('click', () => {
     }, 0);
 
     setTimeout(() => {
-      createNavBarLi("HERRAMIENTAS","#/",navBar);
+      createNavBarLi("HERRAMIENTAS","#tools",navBar);
     }, 100);
 
     setTimeout(() => {

@@ -23,7 +23,7 @@
                 </div>
                 <ul class="nav-ul" id="IdNavMenuUl">
                     <li class="nav-li"> <a href="#">PROYECTOS</a></li>
-                    <li class="nav-li"> <a>HERRAMIENTAS</a></li>
+                    <li class="nav-li"> <a href="#tools">HERRAMIENTAS</a></li>
                     <li class="nav-li"> <a>ACERCA DE MI</a></li>
                     <li class="nav-li"> <a>CONTACTO</a></li>
                 </ul>
@@ -31,7 +31,7 @@
         </header>
         <div class="content">
             <div class="project-row">
-                <div class="project-col-h">
+                <div class="project-col-l">
                     <div class="project-one-top">
                         <div class="project-side">
                             <div class="project-content-icon">
@@ -45,10 +45,9 @@
                         </div>
                         <div class="project-image" >
                             <a target="_blank" href="https://cloiw.github.io/League-of-Data/src/index.html"  class="">
-                                <img id="idProjectOneImg" class="project-image-src" src="./src/img/league_of_data_img.jpg" alt="League of Data">
+                                <img id="idProjectOneImg" class="project-image-src" src="./src/img/lod_logo.png" alt="League of Data">
                             </a>
                             <div class="project-info not-display" id="idProjectInfoOneDiv">
-                                <img src="src/img/league_of_data_bg.png">
                                 <div class="absolute">
                                     <div class="project-close-icon-row">
                                         <h2>League of Data</h2>
@@ -63,9 +62,9 @@
                                         </p>
                                         <h3>Tecnologías </h3>
                                         <div class="tech-tools">
-                                            <img class="tech-tools-icon" src="src/img/html_white.png">
-                                            <img class="tech-tools-icon" src="src/img/css_white.png">
-                                            <img class="tech-tools-icon" src="src/img/js_white.png">
+                                            <img class="tech-tools-icon" alt="HTML5" src="src/img/html_white.png">
+                                            <img class="tech-tools-icon" alt="CSS3" src="src/img/css_white.png">
+                                            <img class="tech-tools-icon" alt="JavaScript" src="src/img/js_white.png">
                                         </div>
                                     </div>
                                 </div>
@@ -75,20 +74,45 @@
                     <div class="project-two-bot">
                         <div class="project-side">
                             <div class="project-content-icon">
-                                <button>
+                                <button id=idProjectInfoTwoBtn>
                                     <img class="project-icon" src="./src/img/info_icon.png" alt="Ver información">
                                 </button>
-                                <a target="_blank" href="https://www.github.com">
+                                <a target="_blank" href="https://github.com/Cloiw/SCL009-Social-Network">
                                     <img class="project-icon" src="./src/img/github_icon.png" alt="Ver en Github">
                                 </a>
                             </div>
                         </div>
                         <div class="project-image">
-                            <img src="">
+                            <a target="_blank" href="https://cloiw.github.io/SCL009-Social-Network/src/index.html"  class="">
+                                <img id="idProjectTwoImg" class="project-image-src" src="./src/img/sala_red_logo.png" alt="League of Data">
+                            </a>
+                            <div class="project-info not-display" id="idProjectInfoTwoDiv">
+                                <div class="absolute">
+                                    <div class="project-close-icon-row">
+                                        <h2>Sala Red de Teatro</h2>
+                                        <button id=idProjectTwoCloseBtn>
+                                            <img class="close-info" src="./src/img/close_navbar_icon.png" alt="Cerrar Info">
+                                        </button>
+                                    </div>
+                                    <div class="project-text-and-tech">
+                                        <p>
+                                        Red social para amantes del teatro.<br>
+                                        Crea tu personaje e interactua con otros, como en una obra de teatro.<br>
+                                        </p>
+                                        <h3>Tecnologías </h3>
+                                        <div class="tech-tools">
+                                            <img class="tech-tools-icon" alt="HTML5" src="src/img/html_white.png">
+                                            <img class="tech-tools-icon" alt="CSS3" src="src/img/css_white.png">
+                                            <img class="tech-tools-icon" alt="JavaScript" src="src/img/js_white.png">
+                                            <img class="tech-tools-icon" alt="Firebase" src="src/img/firebase_white.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="project-col-v">
+                <div class="project-col-r">
                     <div class="project-three-top">
                         <div class="project-image">
                             <img src="">
@@ -122,6 +146,20 @@
                 </div>
             </div>
         </div>
+        <section class="tools-section">
+            <div class="tools-row-title">
+                <h1 id="tools">Herramientas</h1>
+            </div>
+            <div class="tools-row">
+                    <img class="tools-icon" src="./src/img/html_white.png" alt="HTML5">
+                    <img class="tools-icon" src="./src/img/css_white.png" alt="CSS3">
+                    <img class="tools-icon" src="./src/img/js_white.png" alt="JavaScript">
+                    <img class="tools-icon" src="./src/img/react_white.png" alt="React">
+                    <img class="tools-icon" src="./src/img/firebase_white.png" alt="Firebase">
+                    <img class="tools-icon" src="./src/img/git_white.png" alt="Git">
+            </div>
+        </section>
+        <footer>bleh</footer>
         <script src="./src/js/index.js"></script>
     </body>
 </html>
