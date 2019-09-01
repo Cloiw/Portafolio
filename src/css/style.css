@@ -366,8 +366,9 @@ nav {
     }
 
     .nav-li a{
-        padding: 20px 0px 20px 0px;
+        padding: 35px 0px 35px 0px;
         font-size: 25px;
+        height: 0
     }
 
     .nav-li.show {
