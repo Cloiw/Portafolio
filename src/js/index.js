@@ -92,7 +92,7 @@ navIcon.addEventListener('click', () => {
     }, 200);
 
     setTimeout(() => {
-      createNavBarLi("CONTACTO","#/",navBar);
+      createNavBarLi("CONTACTO","#contact",navBar);
     }, 300);
     
     setTimeout(() => {
