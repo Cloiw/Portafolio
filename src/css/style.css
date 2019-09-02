@@ -228,7 +228,9 @@ nav {
     color:white;
 }
 
-#idProjectOneImg, #idProjectTwoImg {
+#idProjectOneImg,
+#idProjectTwoImg,
+#idProjectThreeImg {
     object-fit: contain;
     background-image:linear-gradient(rgba(157, 144, 231, 0.6),rgb(0, 0, 0)),url('../img/lod_bg.jpg');
     background-size: auto,cover;
@@ -236,13 +238,20 @@ nav {
 }
 
 #idProjectTwoImg {
-    background-image:linear-gradient(rgba(157, 144, 231, 0.8),rgb(0, 0, 0)),url('../img/sala_red_bg.jpg');
+    background-image: url('../img/sala_red_bg.jpg');
 }
+
+#idProjectThreeImg {
+    background-image: url('../img/bq_bg_2.jpg');
+}
+
 .project-image-src {
     height: 100%;
     width: 100%;
 }
-#idProjectInfoOneDiv, #idProjectInfoTwoDiv{
+
+#idProjectInfoOneDiv, 
+#idProjectInfoTwoDiv{
     background-image: linear-gradient(rgba(42, 41, 51, 0), rgba(0, 0, 0, 0.8));
 }
 
