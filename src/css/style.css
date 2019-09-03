@@ -12,8 +12,16 @@ body{
     background-attachment: fixed, scroll, scroll, scroll, fixed;
 }
 
-/* rows */
-nav,nav ul,.nav-ul,.nav-logo a,.project-row,.tools-row,.project-col-l,.project-col-r {
+
+nav,
+nav ul,
+.nav-ul,
+.nav-logo a,
+.project-row,
+.tools-row,
+.project-col-l,
+.project-col-r,
+.about-row {
     display: flex;
 }
 
@@ -91,6 +99,10 @@ nav {
 
 .project-row,.tools-row {
     margin: 0 2% 3% 2%;
+    padding-top: 7%;
+}
+
+.project-row {
     padding-top: 2%;
 }
 
@@ -178,6 +190,7 @@ nav {
 }
 
 .project-icon{
+    transition: all .1s ease-in-out;
     height: 40px;
     width: 40px;
 }
@@ -186,6 +199,7 @@ nav {
     width: 45px;
     height: 45px;
     filter: drop-shadow(0px 0px 10px  rgb(255, 255, 255));
+    transition: all .1s ease-in-out;
 }
 .project-close-icon-row > button:hover {
     filter: drop-shadow(0px 0px 10px  rgb(255, 255, 255));
@@ -193,6 +207,7 @@ nav {
 
 .contact-icon:hover{
     filter: drop-shadow(0px 0px 10px  rgba(255, 255, 255, 0.6));
+    transition: all .2s ease-in-out;
 }
 .project-close-icon-row{
     display: flex;
@@ -294,13 +309,34 @@ nav {
     flex-direction: column;
 }
 
-.tools-row-title {
+.tools-row-title, .about-row-title {
     -webkit-box-shadow: 0px 13px 6px -7px rgba(16,1,36,1);
     -moz-box-shadow: 0px 13px 6px -7px rgba(16,1,36,1);
     box-shadow: 0px 13px 6px -7px rgba(16,1,36,1);
     background-color: #565D8C;
     border-radius: 0 4px 4px 0 ;
     width: 50%;
+}
+
+.about-row-title {
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.about-col-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+}
+
+.about-col-text {
+    flex-direction: column;
+    width: 70%;
+    color: white;
+    cursor: default;
+    text-align: center;
 }
 
 .tools-row-title h1{
@@ -315,14 +351,71 @@ nav {
     justify-content: center;
 }
 
+.show-h2 {
+    cursor: default;
+    text-align: center;
+    margin-bottom: 0;
+    color: white;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+
 .tools-icon {
     height: 150px;
     margin: 5px;
 }
 
-.contact-icon{
+.tool-hover:hover .show-h2 {
+    opacity: 1;
+    transition: all .4s ease-in-out;
+
+}
+.contact-icon {
     height: 130px;
     margin: 15px;
+    transition: all .2s ease-in-out;
+}
+
+.about-row {
+    width: 90%;
+    background:
+    linear-gradient(to top,rgba(53,0,86,0.7) 0%, rgba(53,0,86,0.6) 13%, rgba(120, 106, 160, 0.5) 100%) padding-box,
+    linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)) border-box;
+    border-radius: 4px;
+    color: white;
+    cursor: default;
+    font-size: 22px;
+}
+
+.about-row p {
+    margin: 40px 20px 40px 20px;
+    text-align: start;
+}
+
+.about-img {
+    object-fit: contain;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    clip-path: polygon(0% 100%, 0% 70%, 22% 76%, 33% 64%, 43% 72%, 63% 55%, 91% 77%, 100% 71%, 100% 81%, 100% 100%);
+    height: 210px;
+    width: 100%;
+    background-color: rgb(34, 38, 65);
+}
+
+footer p{
+    text-align: end;
+    color: white;
+    margin: 10px;
+}
+
+/* ///// */
+.go-to {
+    height: 60px;
 }
 
 
@@ -413,15 +506,28 @@ nav {
     .project-close-icon-row > button {
         width:25px;
     }
+    
+    .about-col-text {
+        font-size: 17px;
+    }
 
    
 }
 
 @media screen and (max-width: 500px){
+    .about-col-img {
+        width: 40%;
+    }
+    
+    .about-col-text {
+        width: 60%;
+    }
+
     h2 { 
         margin: 0;
         font-size: 16px;
     }
+
     .project-text-and-tech {
         font-size: 16px;
     }
@@ -464,13 +570,22 @@ nav {
     .nav-menu-icon-src{
         height: 30px;
     }
+
+    .tools-row-title h1{
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 300px) {
     .project-text-and-tech {
         font-size:12px;
     }
+
     .project-info { 
         overflow: auto;
+    }
+
+    .tools-row-title h1{
+        font-size: 14px;
     }
 }

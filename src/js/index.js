@@ -98,7 +98,7 @@ navIcon.addEventListener('click', () => {
     }, 100);
 
     setTimeout(() => {
-      createNavBarLi("ACERCA DE MI","#/",navBar);
+      createNavBarLi("ACERCA DE MI","#aboutMe",navBar);
     }, 200);
 
     setTimeout(() => {
