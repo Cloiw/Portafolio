@@ -190,7 +190,6 @@ nav {
 }
 
 .project-icon{
-    transition: all .1s ease-in-out;
     height: 40px;
     width: 40px;
 }
@@ -199,7 +198,6 @@ nav {
     width: 45px;
     height: 45px;
     filter: drop-shadow(0px 0px 10px  rgb(255, 255, 255));
-    transition: all .1s ease-in-out;
 }
 .project-close-icon-row > button:hover {
     filter: drop-shadow(0px 0px 10px  rgb(255, 255, 255));
@@ -360,16 +358,20 @@ nav {
     transition: all .4s ease-in-out;
 }
 
-.tools-icon {
+.tools-icon { 
+    filter: grayscale(200) brightness(3.7) ;
+    transition: all .4s ease-in-out;
     height: 150px;
     margin: 5px;
 }
 
-.tool-hover:hover .show-h2 {
+.tool-hover:hover .show-h2,
+.tool-hover:hover .tools-icon {
     opacity: 1;
     transition: all .4s ease-in-out;
-
+    filter: none;
 }
+
 .contact-icon {
     height: 130px;
     margin: 15px;
