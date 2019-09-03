@@ -5,11 +5,12 @@ body{
     margin: 0;
     font-family: 'Orienta', sans-serif;
     height:100%;
-    background-image: url('../img/stars_3.jpg'),url('../img/stars.png'),url('../img/stars_2.png'),url('../img/stars_2.png'),linear-gradient(rgb(9, 14, 41), rgb(73, 65, 117));
+    background-image: url('../img/stars_3.jpg'),url('../img/stars.png'),url('../img/stars_2.png'),url('../img/stars_2.png'),
+    linear-gradient(rgb(9, 14, 41), rgb(73, 65, 117) 90%,  rgb(109, 98, 173) 96%, rgb(184, 167, 223)99%);
     background-repeat: repeat, repeat, repeat, repeat, no-repeat;
     background-size: 500px, 180px, 100px, 400px, auto;
     background-blend-mode: lighten, soft-light, soft-light, normal, soft-light;
-    background-attachment: fixed, scroll, scroll, scroll, fixed;
+    background-attachment: fixed, scroll, scroll, scroll, scroll;
 }
 
 
