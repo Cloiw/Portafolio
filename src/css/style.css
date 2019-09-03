@@ -221,6 +221,7 @@ nav {
 }
 
 .project-info{
+    background-image: linear-gradient(rgba(42, 41, 51, 0), rgba(0, 0, 0, 0.8));
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -242,19 +243,13 @@ nav {
 }
 
 #idProjectThreeImg {
-    background-image: url('../img/bq_bg_2.jpg');
+    background-image: url('../img/burger_bg.jpg');
 }
 
 .project-image-src {
     height: 100%;
     width: 100%;
 }
-
-#idProjectInfoOneDiv, 
-#idProjectInfoTwoDiv{
-    background-image: linear-gradient(rgba(42, 41, 51, 0), rgba(0, 0, 0, 0.8));
-}
-
 
 .project-text-and-tech {
     margin: 2% 6% 2% 6%;

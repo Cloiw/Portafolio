@@ -3,12 +3,16 @@ const navIcon = document.getElementById("IdNavMenuIcon");
 const navBar = document.getElementById("IdNavMenuUl");
 const projectOneImg = document.getElementById("idProjectOneImg");
 const projectTwoImg = document.getElementById("idProjectTwoImg");
+const projectThreeImg = document.getElementById("idProjectThreeImg");
 const projectOneCloseBtn = document.getElementById('idProjectOneCloseBtn');
 const projectTwoCloseBtn = document.getElementById('idProjectTwoCloseBtn');
+const projectThreeCloseBtn = document.getElementById('idProjectThreeCloseBtn');
 const infoProjectOneBtn = document.getElementById('idProjectInfoOneBtn');
 const infoProjectTwoBtn = document.getElementById('idProjectInfoTwoBtn');
+const infoProjectThreeBtn = document.getElementById('idProjectInfoThreeBtn');
 const infoProjectOneDiv = document.getElementById('idProjectInfoOneDiv');
-const infoProjectTwoDiv = document.getElementById('idProjectInfoTwoDiv')
+const infoProjectTwoDiv = document.getElementById('idProjectInfoTwoDiv');
+const infoProjectThreeDiv = document.getElementById('idProjectInfoThreeDiv');
 
 const createNavBarLi = (text,href,navBar) => {
   const li = document.createElement("li");
@@ -65,6 +69,12 @@ infoProjectTwoBtn.addEventListener('click', () => {
 })
 projectTwoCloseBtn.addEventListener('click', () => {
   showOrHideInfoProject(projectTwoImg,infoProjectTwoDiv)
+})
+infoProjectThreeBtn.addEventListener('click', () => {
+  showOrHideInfoProject(projectThreeImg,infoProjectThreeDiv)
+})
+projectThreeCloseBtn.addEventListener('click', () => {
+  showOrHideInfoProject(projectThreeImg,infoProjectThreeDiv)
 })
 
 
