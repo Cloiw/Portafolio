@@ -141,7 +141,8 @@ nav {
 .project-one-top,
 .project-two-bot,
 .project-three-top,
-.project-four-bot {
+.project-four-bot,
+.about-row{
     background: 
      linear-gradient(to top,rgba(53,0,86,0.7) 0%, rgba(53,0,86,0.6) 13%, rgba(120, 106, 160, 0.5) 100%) padding-box,
      linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)) border-box;
@@ -327,12 +328,12 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30%;
+    width: 40%;
 }
 
 .about-col-text {
     flex-direction: column;
-    width: 70%;
+    width: 60%;
     color: white;
     cursor: default;
     text-align: center;
@@ -381,17 +382,13 @@ nav {
 
 .about-row {
     width: 90%;
-    background:
-    linear-gradient(to top,rgba(53,0,86,0.7) 0%, rgba(53,0,86,0.6) 13%, rgba(120, 106, 160, 0.5) 100%) padding-box,
-    linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)) border-box;
-    border-radius: 4px;
     color: white;
     cursor: default;
     font-size: 22px;
 }
 
 .about-row p {
-    margin: 40px 20px 40px 20px;
+    margin: 40px 10px 40px 20px;
     text-align: start;
 }
 
@@ -536,6 +533,15 @@ footer p{
 }
   
 @media screen and (max-width: 380px) {
+    .about-col-img, 
+    .about-col-text {
+        word-break: break-all;
+        width: 100%;
+    }
+
+    .about-row {
+        flex-direction: column;
+    }
     .tech-tools-icon{
         height: 35px;
         margin-right: 0;
@@ -565,7 +571,7 @@ footer p{
         margin-right: 0px;
     }
 
-    .nav-icon{
+    .nav-icon {
         margin-right: 10px;
     }
 
@@ -573,8 +579,8 @@ footer p{
         height: 30px;
     }
 
-    .tools-row-title h1{
-        font-size: 18px;
+    .tools-row-title  {
+        width: 70%;
     }
 }
 
@@ -587,7 +593,9 @@ footer p{
         overflow: auto;
     }
 
-    .tools-row-title h1{
+    .tools-row-title h1, 
+    .about-row-title h1{
         font-size: 14px;
     }
+
 }
