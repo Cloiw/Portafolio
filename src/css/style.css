@@ -160,7 +160,7 @@ nav {
 }
 
 .project-image-src:hover {
-    filter: brightness(1.1) saturate(85%);
+    filter: brightness(1.1);
 }
 .project-two-bot{
     height: 230px;
@@ -263,7 +263,8 @@ nav {
 }
 
 #idProjectFourImg {
-    background-image: red;
+    background-image: url('../img/htw_bg.jpg');
+    background-size: cover;
 }
 
 .project-image-src {
