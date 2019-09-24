@@ -156,22 +156,22 @@ nav {
 }
 
 .project-one-top {
-    height: 400px;
+    height: 380px;
 }
 
 .project-image-src:hover {
     filter: brightness(1.1);
 }
 .project-two-bot{
-    height: 230px;
+    height: 285px;
    
 }
 .project-three-top{
-    height: 450px;
+    height: 430px;
     
 }
 .project-four-bot{
-    height: 183px;
+    height: 234px;
 }
 
 .project-content-icon{
@@ -468,9 +468,10 @@ footer p{
     }
 
     .nav-li a {
-        padding: 35px 0px 35px 0px;
+        padding: 35px 0px 35px 15px;
         font-size: 25px;
-        height: 0
+        height: 0;
+        justify-content: flex-start;
     }
 
     .nav-li.show {
