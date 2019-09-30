@@ -561,6 +561,7 @@ footer p{
     .about-col-img, 
     .about-col-text {
         width: 100%;
+        word-wrap: break-word;
     }
 
     .tech-tools-icon{
