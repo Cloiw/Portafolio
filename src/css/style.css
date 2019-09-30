@@ -544,7 +544,6 @@ footer p{
 @media screen and (max-width: 500px){
     .about-col-img, 
     .about-col-text {
-        word-break: break-all;
         width: 100%;
     }
 
@@ -561,7 +560,6 @@ footer p{
 @media screen and (max-width: 380px) {
     .about-col-img, 
     .about-col-text {
-        word-break: break-all;
         width: 100%;
     }
 
